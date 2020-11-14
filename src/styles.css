@@ -1,0 +1,102 @@
+body {
+  margin: auto;
+  background-color: #f2ebe5;
+  height: 100%;
+
+  font-family: "Lucida Console", Courier, monospace;
+
+  position: relative;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
+  overflow: hidden;
+  touch-action: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+html {
+  height: -webkit-fill-available;
+  height: fill-available;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+a {
+  color: black;
+}
+
+#title {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#subtext {
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#description {
+  line-height: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#start-game {
+  line-height: 20px;
+}
+
+#button-container {
+  display: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#vulva-button-1,
+#vulva-button-2,
+#vulva-button-3 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 20px;
+  border: none;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.draggable {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(1px 1px 3px white);
+  display: block;
+  user-select: none;
+  margin: 0;
+}
+img.draggable {
+  width: 20%;
+}
+
+iframe {
+  display: none;
+}
